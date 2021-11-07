@@ -4,32 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div</title>
-    <style>
-        div
-        {
-            background-color: aqua;
-            border: 2px solid black;
-        }
-        li
-        {
-            background-color: blueviolet;
-            border: 1px solid black;
-        }
-        a
-        {
-            background-color: chocolate;
-        }
-        .h-50 { height: 50px; }
-        .h-150 { height: 150px; }
-        .h-200 { height: 200px; }
-        .h-550 { height: 550px; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
 </head>
 <body>
-    <div class="h-150"> Header </div>
-    <div class="h-50"> Menu </div>
-    <div class="h-550"> Main Content </div>
-    <div class="h-150"> Footer </div>
+    <section class="container">
+        <div class="row">
+            <div class="h-150 bg-1">
+                <div class="w-20 h-150 float-left"> Logo </div>
+                <div class="w-80 h-150 bg-5 float-left"> Banner </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="h-50 bg-2 w-20 float-left"></div>
+            <div class="h-50 bg-2 w-60 float-left">
+                <ul class="menu">
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#"> About </a> </li>
+                    <li> <a href="#"> Contact </a> </li>
+                    <li> <a href="#"> Help </a> </li>
+                    <li> <a href="#"> Login </a> </li>
+                </ul>
+            </div>
+            <div class="h-50 bg-2 w-20 float-left"></div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="h-650 bg-3">
+                Body
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="h-50 bg-4">
+                Footer
+            </div>
+        </div>
+    </section>
 </body>
 </html>
